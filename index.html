@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="ICON" href="logo2.PNG" type="image/ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>GOODDROP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()" style="margin:0;">
+  <!-- Loader -->
+     <div class="loads" id="loader">
+        <div class="blobs">
+              <center> <h1 style="color:#48476e"><img src="images/prodlogo.PNG"  width="250" height="60"></h1></center>
+            	<div class="blob-center"></div>
+            	<div class="blob"></div>
+            	<div class="blob"></div>
+            	<div class="blob"></div>
+            	<div class="blob"></div>
+            	<div class="blob"></div>
+  	          <div class="blob"></div>
+       </div>
+    </div>
+<!--loader -->
+
+<!-- Top Nav Bar -->
+  <div style="display:none;" id="myDiv">
+        <nav class="navbar navbar-default navbar-fixed-top">
+             <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                    </button>
+                          <a class="navbar-brand" href="#myPage"><img src="images/prodlogo.PNG"  alt="Cinque Terre" width="150" height="30"></a>
+                </div>
+                     <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="#aboutus">ABOUT US</a></li>
+                              <li><a> <span class="glyphicon glyphicon-earphone"></span> 9440612659</a></li>
+                              <li><a href="#myModal"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> ACCOUNT</a></li>
+                         </ul>
+                    </div>
+               </div>
+                     <div class="progress-bar" id="myBar"></div>
+        </nav>
+
+
+<!--contrainer for content-->
+  <div class="container">
+    <h3>Container</h3>
+  </div>
+
+  <div>
+  <div id="logo-1"><img src="images/holo1.PNG" width="100%" height="350" ></div>
+  <div id="logo-2"><img src="images/prod.PNG" width="100%" height="580" ></div>
+    <div class="hrf">
+        <button class="butto button3" href="#myModal2"  data-toggle="modal">parcel details  <span class = "caret"></button>
+        <button class="butto button3">your bike details  <span class = "caret"></button>
+        <button class="butto button3" href="#myModal3"  data-toggle="modal">Book Now </button>
+    </div>
+</div>
+      <div id="aboutme" class="container-fluid">
+          <div class="row">
+               <div class="col-sm-12">
+                    <div id="logo-5"><img src="images/holo3.PNG" width="100%" height="250" ></div>
+                    <div id="logo-3"><img src="images/prod2.PNG" width="100%" height="580" ></div>
+               </div>
+          </div>
+      </div>
+<div id="logo-4"><img src="images/holo2.PNG" width="100%" height="200" ></div>
+<div id="logo-6"><img src="images/prod3.PNG" width="100%" height="400" ></div>
+<div id="logo-7"><img src="images/holo5.PNG" width="100%" height="300" ></div>
+<div id="logo-8"><img src="images/prod5.PNG" width="100%" height="450" ></div>
+
+
+<!-- Login form -->
+<div id="myModal" class="modal fade">
+	       <div class="modal-dialog modal-login">
+		                <div class="modal-content">
+			                   <div class="modal-header">
+			                     	<div class="avatar">
+				                        	<img src="prouser.png" alt="Avatar">
+				                   </div>
+				                          <h4 class="modal-title">Member Login</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                   </div>
+			                         <div class="modal-body">
+				                          <form action="/examples/actions/confirmation.php" method="post">
+					                            <div class="form-group">
+						                                 <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+					                            </div>
+					                              <div class="form-group">
+						                                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+				                               	</div>
+					                              <div class="form-group">
+					                                 	<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+					                              </div>
+			                        	</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+      <div class="modal-footer">
+				<a href="#">Create Account</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--parcel form derived from login form-->
+
+<div id="myModal2" class="modal fade">
+	       <div class="modal-dialog modal-login">
+		                <div class="modal-content">
+			                   <div class="modal-header">
+				                          <h4 class="modal-title">parcel details</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                   </div>
+			                         <div class="modal-body">
+				                          <form action="/examples/actions/confirmation.php" method="post">
+					                            <div class="form-group">
+						                                 <input type="text" class="form-control"  placeholder="Full Nmae" required="required">
+					                            </div>
+					                              <div class="form-group">
+						                                <input type="password" class="form-control"  placeholder="bike Name" required="required">
+				                               	</div>
+                                        <div class="form-group">
+						                                <input type="password" class="form-control"  placeholder="bike Name" required="required">
+				                               	</div>
+                                        <div class="form-group">
+						                                <input type="password" class="form-control"  placeholder="bike Name" required="required">
+				                               	</div>
+                                        <div class="form-group">
+						                                <input type="password" class="form-control"  placeholder="bike Name" required="required">
+				                               	</div>
+					                              <div class="form-group">
+					                                 	<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Submit</button>
+					                              </div>
+			                        	</form>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- popup derived from login form -->
+
+<div id="myModal3" class="modal fade">
+	       <div class="modal-dialog modal-login">
+		                <div class="modal-content">
+			                   <div class="modal-header">
+				                          <h4 class="modal-title">Your bike is booked now.you can tarck your package</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                   </div>
+			                         <div class="modal-body">
+			</div>
+			</div>
+		</div>
+	</div>
+
+<!--Footer-->
+<footer class="page-footer font-small blue pt-4 mt-4">
+<!--Footer Links-->
+<div class="container-fluid text-center text-md-left">
+    <div class="row">
+        <!--First column-->
+        <div class="col-md-2">
+            <h4 class="text-uppercase">Company</h4>
+            <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">About us</a>
+                    </li>
+                    <li>
+                        <a href="#!">customer reviews</a>
+                    </li>
+                    <li>
+                        <a href="#!">booking terms</a>
+                    </li>
+                    <li>
+                        <a href="#!">privacy policy</a>
+                    </li>
+                </ul>
+        </div>
+        <!--Second column-->
+        <div class="col-md-2">
+            <h4 class="text-uppercase">Support</h4>
+            <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">How to </a>
+                    </li>
+                    <li>
+                        <a href="#!">FAQ's</a>
+                    </li>
+                </ul>
+        </div>
+        <!--third column-->
+        <div class="col-md-2">
+            <h4 class="text-uppercase">Need Help</h4>
+            <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">support@gooddrop.in</a>
+                    </li>
+                    <li>
+                        <a href="#!">call at 9440612659</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-uppercase">Connect with us</h4>
+            <!--Social buttons-->
+           <div class="text-center">
+               <ul class="list-unstyled list-inline">
+                <li> <a href="#" class="fa fa-facebook"></a><li>
+                <li> <a href="#" class="fa fa-twitter"></a><li>
+                 <li><a href="#" class="fa fa-linkedin"></a><li>
+                 <li><a href="#" class="fa fa-youtube"></a><li>
+                 <li><a href="#" class="fa fa-instagram"></a><li>
+               </ul>
+           </div>
+           <!--/.Social buttons-->
+        </div>
+    </div>
+</div>
+<!--Copyright-->
+<div class="footer-copyright py-3 text-center">
+    © 2018 Copyright:
+    <a href="sainaveen.tk">Gooddrop.com</a>
+</div>
+</footer>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction1()};
+function myFunction1() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+  <script>
+
+
+  var myVar;
+
+  function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+</body>
+</html>
